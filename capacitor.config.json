@@ -1,0 +1,8 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "aplink",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {}
+}

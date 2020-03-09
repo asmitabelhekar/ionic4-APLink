@@ -1,0 +1,7 @@
+{
+  "name": "aplink",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
