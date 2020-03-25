@@ -1,0 +1,18 @@
+
+
+<section id="titleLinkName" >
+  <mat-form-field class="example-full-width">
+    <mat-label>title</mat-label>
+    <input matInput id="title" type="text" value="{{name}}" [(ngModel)]="popuplinksModel.title"  >
+  </mat-form-field>
+  
+  
+  <mat-form-field class="example-full-width">
+    <mat-label>Link Name</mat-label>  
+    <input matInput id="name" class="form-control"  type="text"  [(ngModel)]="popuplinksModel.link"/> 
+  </mat-form-field>
+</section>
+
+<div  fxLayout="row" fxLayoutAlign="space-between center">
+<button mat-button (click)="postCategory(popuplinksModel)" >Submit </button>
+<button mat-button (click)="closeDialog()">cancel</button>

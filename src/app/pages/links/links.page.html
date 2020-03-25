@@ -1,9 +1,60 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>links</ion-title>
+<ion-header class="new-background-color">
+  <ion-toolbar class="new-background-color">
+    <div class="main_hed head_name">
+      <div fxLayoutAlign="start" class="head_name" fxLayout="row" (click)="back()">
+        <i class="material-icons"  >
+          arrow_back
+        </i>
+      </div>
+      <label class="name">@links</label>
+    </div>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
+  <div class="container_holder" fxLayout="column"  fxLayoutAlign=" center">
+    <mat-card fxLayoutAlign="start " fxLayout="column" *ngFor="let item of categoryName" class="category_card">
+    
+    
+    
+      <p class="titie_name" >{{item.title}}</p>
+    
+    
+      <a href="{{item.link}}" >{{item.link}}</a>
+
+      <div>
+
+        <!-- <i class="material-icons" fxLayoutAlign="end end">
+          delete
+        </i> -->
+
+<!-- 
+        <span class="material-icons"    fxLayoutAlign="end end"   (click)="openActionSheet()">
+          more_vert
+          </span> -->
+
+
+          <!-- (click)="delet(item.id)" -->
+
+
+        <!-- <span class="material-icons" (click)="options()">
+          more_vert
+          </span> -->
+
+      </div>
+    </mat-card>
+
+
+
+
+
+    <ion-fab>
+      <button ion-fab class="add_catagaris" (click)="openDialog()">+</button>
+    </ion-fab>
+
+
+
+
+  </div>
 </ion-content>

@@ -8,12 +8,20 @@ import { LinksPageRoutingModule } from './links-routing.module';
 
 import { LinksPage } from './links.page';
 
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatCardModule } from '@angular/material/card';
+import { MatDialogModule } from '@angular/material';
+
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    LinksPageRoutingModule
+    MatDialogModule,
+    LinksPageRoutingModule,
+    FlexLayoutModule,
+    MatCardModule
   ],
   declarations: [LinksPage]
 })

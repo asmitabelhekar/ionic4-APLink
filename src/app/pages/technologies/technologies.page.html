@@ -1,9 +1,40 @@
+
 <ion-header>
-  <ion-toolbar>
-    <ion-title>technologies</ion-title>
+  <ion-toolbar class="new-background-color">
+    <div class="main_hed">
+
+
+
+
+      <label class="head_name">Category</label>
+      <img src="" alt="">
+    </div>
+
   </ion-toolbar>
+
 </ion-header>
 
 <ion-content>
 
+  <div class="container_holder" fxLayout="column" fxLayoutAlign=" center">
+
+
+    <mat-card fxLayout="row" fxLayoutAlign="space-between" *ngFor="let item of categoryName" class="category_card">
+
+      <label class="categoryNameSelect" (click)=nextPage(item.id)>{{item.name}}</label>
+
+
+
+
+    </mat-card>
+
+    <ion-fab>
+      <button ion-fab class="add_catagaris" (click)="openDialog()">+</button>
+    </ion-fab>
+
+
+
+
+
+  </div>
 </ion-content>

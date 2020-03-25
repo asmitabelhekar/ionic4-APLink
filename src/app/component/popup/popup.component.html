@@ -1,0 +1,20 @@
+<form action="">
+
+  
+<section >
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Add Category</mat-label>
+    <input matInput id="category" type="text" value="title"  [(ngModel)]="popupModel.catagoryName" name="categoryname" ng-dirty>
+  </mat-form-field>
+  
+</section>
+  
+
+<div  fxLayout="row" fxLayoutAlign="space-between center">
+<button mat-button (click)="postCategory(popupModel)" >Submit </button>
+<button mat-button (click)="closeDialog()">cancel</button>
+
+</div>
+
+</form>
