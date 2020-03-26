@@ -1,16 +1,14 @@
 
 .category_card{
+
     width:94%;
     border-radius: 5px;
     padding:1.3em;
     margin: 0.40em;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
-
 }
 .container_holder{
-    // padding-top: 10px;
-        // background-color: rgb(243, 240, 236);
 
         background-image: linear-gradient( 109.6deg,  rgba(204,228,247,1) 11.2%, rgba(237,246,250,1) 100.2% );        height: 100%;
         width: 100%;
@@ -24,9 +22,68 @@
     
 
 }
+.logo_of_link{
+    width: 100%;
+    height: 5em;
+    border: 1px solid black;
+}
+.a{
+    outline : none;
+}
+.card_container_holer{
+    width: 100%;
+    height: auto;
+    // border:1px solid black;
+    border-radius: 5px;
+   padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+ background-color: rgb(234, 232, 236);
+
+  
+}
+.main_hed head_name{
+    margin: 5px;
+}
+.card_container_holer b{
+  word-wrap: break-word;
+
+}
+.a_tag{
+    outline: none;
+}
+
+.forImgOnly{
+    width: auto;
+    height: auto;
+
+}
+.description{
+ width: 82%;
+ height: auto;
+ font-size: 0.90em;
+ padding: 5px;
+ font-family: 'Cabin', sans-serif;
+ color: rgb(24, 23, 23);
+ 
+}
+// div.b {
+//     width: auto;
+//     height: auto;
+//   word-wrap: break-word;
+//   font-size: 0.80em;
+// }
+.card_container_holer img{
+ width: 50px;
+ height: 50px;
+//  border: 1px solid black;
+ border-radius: 50px;
+ padding:5px;
+
+}
+
 .name{
     margin-left: 10px;
-
 }
 
 .main_hed{
@@ -34,10 +91,8 @@
 }
 .titie_name{
     margin:0px;
-    padding: 0contanor_holder   px;
     font-family: 'Spartan', sans-serif;
 }
-
 .add_catagaris{
     width:60px;
     height:60px;

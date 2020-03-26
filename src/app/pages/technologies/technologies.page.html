@@ -1,14 +1,19 @@
 
 <ion-header>
   <ion-toolbar class="new-background-color">
-    <div class="main_hed">
+    <div class="main_hed" fxLayout="row" >
 
 
 
+<div class="head_name">
+  <label>Category</label>
 
-      <label class="head_name">Category</label>
-      <img src="" alt="">
+</div>
+     
+      <!-- <div class="div_of_logo"> <img src="../../../assets/ap_logo1.jpg" alt="" ></div> -->
+  
     </div>
+    <!-- <img src="../../../assets/ap_logo (1).png" alt="" >-->
 
   </ion-toolbar>
 
@@ -22,6 +27,8 @@
     <mat-card fxLayout="row" fxLayoutAlign="space-between" *ngFor="let item of categoryName" class="category_card">
 
       <label class="categoryNameSelect" (click)=nextPage(item.id)>{{item.name}}</label>
+
+     
 
 
 
