@@ -15,32 +15,29 @@
 
   <div class="container_holder" fxLayout="column"  fxLayoutAlign=" center">
     <mat-card fxLayoutAlign="start " fxLayout="column" *ngFor="let item of categoryName" class="category_card">
-    
-    
-    
       <p class="titie_name" >{{item.title}}</p>
-    
-    
 
-
+      <a href="{{item.link}}">
  
+      <div *ngIf="item.linkDetails != null">
+        <div class="card_container_holer" >
+          <div *ngIf="item.linkDetail.description.image != null">
 
-      <a href="{{item.link}}" class="a_tag" >
-
-        <div class="card_container_holer">
-          <div class="forImgOnly">
             <img src="{{item.linkDetails.image}}" alt="">
+         
           </div>
- 
-         <!-- <div class="b"> This div contains a very long word: thisifermfrekflerlfklrekflkerlfsaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</div> --> 
-         <div class="description">
-          <div class="b">{{item.linkDetails.description}}  </div>
- 
-          <!-- {{item.description}} -->
-         </div>
+         <!-- <div class="b"> This div contains a very long word: thisifermfrekflerlfklrekflkerlfsaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</div> -->
+        
         </div>
+        <div class="description" *ngIf="item.linkDetail.description != null" >
+         <div class="b"> {{item.linkDetails.description}}</div>
+
+
+        </div>
+      </div>
+       
       </a>
-         <a href="{{item.link}}" >{{item.link}}</a>
+      
 
       <div>
 

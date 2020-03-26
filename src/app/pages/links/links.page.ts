@@ -119,7 +119,7 @@ export class LinksPage implements OnInit {
 
     this.contt = { "cont": 0 }
     const dialogRef = this.dialog.open(PopuplinksComponent, {
-      width: '250px',
+      width: '200px',
 
 
 
